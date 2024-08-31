@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Matemasie&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:deepskyblue;
+  color:rgba(10, 61, 102, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Matemasie", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
