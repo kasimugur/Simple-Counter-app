@@ -7,10 +7,11 @@
 }
 
 body {
-  background-color:deepskyblue;
-  color:rgba(10, 61, 102, 0.8);
+  background-image: url('src/image/jungle.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;

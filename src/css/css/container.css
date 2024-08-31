@@ -1,1 +1,68 @@
-/*# sourceMappingURL=container.css.map */
+.container {
+  max-width: 1200px;
+}
+.container .header {
+  border-radius: 5px;
+  background: linear-gradient(rgba(34, 233, 157, 0.03), rgba(19, 226, 81, 0.03));
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  gap: 20px;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+  padding: 10px 25px;
+  box-shadow: 0 5px 10px rgba(21, 224, 11, 0.1450980392);
+  width: 500px;
+}
+.container .header:hover h1 {
+  transform: scale(1.08);
+}
+.container .header h1 {
+  text-align: center;
+  color: rgba(10, 61, 102, 0.8);
+  text-shadow: 1px 3px 10px #fff;
+  filter: drop-shadow(-0.2rem 0.1rem 0.1px rgba(0, 47, 255, 0.668));
+  transition: all 0.3s ease-in-out;
+}
+.container .header .input {
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  box-shadow: 3px 5px 0.8rem rgba(6, 247, 235, 0.3215686275);
+  opacity: 0.5;
+  color: rgba(9, 2, 2, 0.6980392157);
+}
+.container .header .input:focus {
+  box-shadow: none;
+  filter: drop-shadow(0 -1mm 3mm rgba(1, 149, 189, 0.4823529412));
+  opacity: 0.7;
+}
+.container .header .input:valid, .container .header .input:active {
+  border: 0.5px solid;
+  border-color: rgba(127, 255, 212, 0.5);
+  outline: none;
+}
+.container ul .card {
+  border-radius: 1rem;
+  background-image: url("src/image/jungleCard.jpg");
+  background-position: 100%;
+  background-size: cover;
+  margin: 2px;
+  padding: 0.5em 2em;
+  background-repeat: no-repeat;
+  width: 400px;
+  list-style-type: none;
+  box-shadow: 0.1rem 1rem 3rem #000;
+}
+.container ul .card:hover h1 {
+  transform: scale(1.1);
+}
+.container ul .card .card-header {
+  color: rgba(255, 0, 0, 0.8);
+  text-align: center;
+}
+.container ul .card .card-header h1 {
+  text-shadow: 1px 3px 5px #fff;
+  filter: drop-shadow(-0.2rem 0.1rem 0.1px rgba(244, 8, 8, 0.815));
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=container.css.map */
