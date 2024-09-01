@@ -1,48 +1,20 @@
 .container {
   max-width: 1200px;
-}
-.container .header {
-  border-radius: 5px;
-  background: linear-gradient(rgba(34, 233, 157, 0.03), rgba(19, 226, 81, 0.03));
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  gap: 20px;
-  display: flex;
-  margin-top: 2rem;
-  flex-direction: column;
-  padding: 10px 25px;
-  box-shadow: 0 5px 10px rgba(21, 224, 11, 0.1450980392);
-  width: 500px;
-}
-.container .header:hover h1 {
-  transform: scale(1.08);
-}
-.container .header h1 {
   text-align: center;
-  color: rgba(10, 61, 102, 0.8);
-  text-shadow: 1px 3px 10px #fff;
-  filter: drop-shadow(-0.2rem 0.1rem 0.1px rgba(0, 47, 255, 0.668));
-  transition: all 0.3s ease-in-out;
+  margin: 20px 0px;
 }
-.container .header .input {
-  padding: 0.5rem 1rem;
-  border-radius: 3rem;
-  box-shadow: 3px 5px 0.8rem rgba(6, 247, 235, 0.3215686275);
-  opacity: 0.5;
-  color: rgba(9, 2, 2, 0.6980392157);
-}
-.container .header .input:focus {
-  box-shadow: none;
-  filter: drop-shadow(0 -1mm 3mm rgba(1, 149, 189, 0.4823529412));
-  opacity: 0.7;
-}
-.container .header .input:valid, .container .header .input:active {
-  border: 0.5px solid;
-  border-color: rgba(127, 255, 212, 0.5);
-  outline: none;
+.container ul {
+  padding: 5px;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 500px;
 }
 .container ul .card {
+  overflow-wrap: break-word;
   border-radius: 1rem;
   background-image: url("src/image/jungleCard.jpg");
   background-position: 100%;
@@ -50,9 +22,16 @@
   margin: 2px;
   padding: 0.5em 2em;
   background-repeat: no-repeat;
-  width: 400px;
+  width: 300px;
+  height: -moz-max-content;
+  height: max-content;
   list-style-type: none;
-  box-shadow: 0.1rem 1rem 3rem #000;
+  box-shadow: 0.1rem 1rem 3rem rgba(62, 193, 26, 0.515);
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.container ul .card:hover {
+  filter: drop-shadow(-0.2rem 0.2rem 1.1px rgb(48, 238, 5));
 }
 .container ul .card:hover h1 {
   transform: scale(1.1);
@@ -65,4 +44,63 @@
   text-shadow: 1px 3px 5px #fff;
   filter: drop-shadow(-0.2rem 0.1rem 0.1px rgba(244, 8, 8, 0.815));
   transition: all 0.3s ease-in-out;
+}
+.container ul .card .card-body {
+  text-align: start;
+  color: #fff;
+}
+.container ul .card .card-footer {
+  margin-top: 10px;
+  border-radius: 1rem;
+  filter: drop-shadow(-2px 2px 10px #22e469);
+  background: linear-gradient(to right, rgba(100, 234, 10, 0.6588235294), #1eb6e4, rgba(44, 231, 97, 0.6274509804));
+  display: flex;
+  justify-content: space-around;
+}
+.container ul .card .card-footer .done {
+  padding: 2px 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+}
+.container ul .card .card-footer .done:hover {
+  transform: scale(2.6);
+  box-shadow: 2px 3px 10px green;
+  filter: drop-shadow(2px 3px 10px rgb(4, 247, 4));
+}
+.container ul .card .card-footer .done .icon {
+  border-radius: 50%;
+}
+.container ul .card .card-footer .edit {
+  padding: 2px 5px;
+  border-radius: 60%;
+  transition: all 0.3s ease-out;
+}
+.container ul .card .card-footer .edit:hover {
+  transform: scale(2.6);
+  box-shadow: 2px 3px 10px green;
+  filter: drop-shadow(2px 3px 10px rgb(4, 247, 4));
+}
+.container ul .card .card-footer .edit .icon {
+  border-radius: 5px;
+}
+.container ul .card .card-footer .delete {
+  padding: 2px 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+}
+.container ul .card .card-footer .delete:hover {
+  transform: scale(2.6);
+  box-shadow: 2px 3px 10px green;
+  filter: drop-shadow(2px 3px 10px rgb(4, 247, 4));
+}
+.container ul .card .card-footer .delete .icon {
+  border-radius: 5px;
+  background: none;
+}
+.container ul .card .card-footer .delete .icon:active, .container ul .card .card-footer .delete .icon:focus {
+  background: linear-gradient(to top, red, blue, green);
+}
+.container ul .card .card-footer .icon {
+  background: linear-gradient(to top, rgb(0, 174, 255), rgb(127, 127, 215), rgb(122, 128, 0));
+  color: rgba(255, 255, 255, 0.5176470588);
 }/*# sourceMappingURL=container.css.map */

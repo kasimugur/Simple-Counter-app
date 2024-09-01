@@ -1,0 +1,53 @@
+  .header {
+
+    border-radius: 5px;
+    background: linear-gradient(rgba(34, 233, 157, 0.03), rgba(19, 226, 81, 0.03));
+    // background-image: url('src/orm.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 20px;
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    padding: 10px 25px;
+    box-shadow: 0 5px 10px #15e00b25;
+    // width: 500px;
+
+    &:hover {
+      h1 {
+        transform: scale(1.08);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: rgba(10, 61, 102, 0.8);
+      text-shadow: 1px 3px 10px #fff;
+      filter: drop-shadow(-0.2rem 0.1rem 0.1px rgba(0, 47, 255, 0.668));
+      transition: all 0.3s ease-in-out;
+    }
+
+    .input {
+      padding: 0.5rem 1rem;
+      border-radius: 3rem;
+      box-shadow: 3px 5px 0.8rem #06f7eb52;
+      opacity: 0.5;
+      color: #090202b2;
+      width: 50%;
+      text-align: center;
+
+      &:focus {
+        box-shadow: none;
+        filter: drop-shadow(0 -1mm 3mm #0195bd7b);
+        opacity: 0.7;
+      }
+
+      &:valid,
+      &:active {
+        border: 0.5px solid;
+        border-color: rgba(127, 255, 212, 0.5);
+        outline: none;
+      }
+    }
+  }

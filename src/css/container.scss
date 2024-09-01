@@ -1,83 +1,124 @@
 .container {
   max-width: 1200px;
+  text-align: center;
+  margin: 20px 0px;
 
-  .header {
-    border-radius: 5px;
-    background: linear-gradient(rgba(34, 233, 157, 0.03), rgba(19, 226, 81, 0.03));
-    // background-image: url('src/orm.jpg');
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    gap: 20px;
-    display: flex;
-    margin-top: 2rem;
-    flex-direction: column;
-    padding: 10px 25px;
-    box-shadow: 0 5px 10px #15e00b25;
-    width: 500px;
-
-    &:hover {
-      h1 {
-        transform: scale(1.08);
-      }
-    }
-
-    h1 {
-      text-align: center;
-      color: rgba(10, 61, 102, 0.8);
-      text-shadow: 1px 3px 10px #fff;
-      filter: drop-shadow(-0.2rem 0.1rem 0.1px rgba(0, 47, 255, 0.668));
-      transition: all 0.3s ease-in-out;
-    }
-
-    .input {
-      padding: 0.5rem 1rem;
-      border-radius: 3rem;
-      box-shadow: 3px 5px 0.8rem #06f7eb52;
-      opacity: 0.5;
-      color: #090202b2;
-
-      &:focus {
-        box-shadow: none;
-        filter: drop-shadow(0 -1mm 3mm #0195bd7b);
-        opacity: 0.7;
-      }
-
-      &:valid,
-      &:active {
-        border: 0.5px solid;
-        border-color: rgba(127, 255, 212, 0.5);
-        outline: none;
-      }
-    }
-  }
 
   ul {
+    padding: 5px;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+
     .card {
+      overflow-wrap: break-word;
       border-radius: 1rem;
       background-image: url('src/image/jungleCard.jpg');
-      background-position:100%;
+      background-position: 100%;
       background-size: cover;
       margin: 2px;
       padding: 0.5em 2em;
       background-repeat: no-repeat;
-      width: 400px;
+      width: 300px;
+      height: max-content;
       list-style-type: none;
-      box-shadow: 0.1rem 1rem 3rem #000;
-      
-      &:hover{
-        h1{
+      box-shadow: 0.1rem 1rem 3rem rgba(62, 193, 26, 0.515);
+      border: none;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        filter: drop-shadow(-0.2rem 0.2rem 01.1px rgb(48, 238, 5));
+
+        h1 {
           transform: scale(1.1);
         }
       }
-      .card-header{
+
+      .card-header {
         color: rgba(255, 0, 0, 0.8);
         text-align: center;
-        
-        h1{
-          text-shadow: 1px 3px 5px #fff ;
-          filter: drop-shadow(-0.2rem 0.1rem 0.1px rgba(244, 8, 8, 0.815)) ;
+
+        h1 {
+          text-shadow: 1px 3px 5px #fff;
+          filter: drop-shadow(-0.2rem 0.1rem 0.1px rgba(244, 8, 8, 0.815));
           transition: all 0.3s ease-in-out;
+        }
+      }
+
+      .card-body {
+        text-align: start;
+        color: #fff;
+      }
+
+      .card-footer {
+        margin-top: 10px;
+        border-radius: 1rem;
+        filter: drop-shadow(-2px 2px 10px #22e469);
+        background: linear-gradient(to right, #64ea0aa8, #1eb6e4, #2ce761a0);
+        display: flex;
+        justify-content: space-around;
+
+        .done {
+          padding: 2px 5px;
+          border-radius: 50%;
+          // opacity: 0.5;
+        
+          transition: all 0.3s ease-out;
+          &:hover{
+            transform: scale(2.6);
+            box-shadow: 2px 3px 10px green;
+            filter: drop-shadow(2px 3px 10px rgb(4, 247, 4));
+          }
+          .icon{
+            border-radius: 50%;
+          }
+    
+        }
+        
+        .edit {
+          padding: 2px 5px;
+          border-radius: 60%;
+          // opacity: 0.5;
+          transition: all 0.3s ease-out;
+          &:hover{
+            transform: scale(2.6);
+            box-shadow: 2px 3px 10px green;
+            filter: drop-shadow(2px 3px 10px rgb(4, 247, 4));
+          }
+          .icon{
+            border-radius: 5px;
+          }
+        }
+        
+        .delete {
+          padding: 2px 5px;
+          border-radius: 50%;
+          // opacity: 0.5;
+          transition: all 0.3s ease-out;
+          &:hover{
+            transform: scale(2.6);
+            box-shadow: 2px 3px 10px green;
+            filter: drop-shadow(2px 3px 10px rgb(4, 247, 4));
+
+          }
+          .icon{
+            border-radius: 5px;
+            background: none;
+            &:active,
+            &:focus{
+
+              background:linear-gradient(to top, red,blue,green);
+            }
+          }
+        }
+        .icon{
+          background:linear-gradient(to top, rgb(0, 174, 255),rgb(127, 127, 215),rgb(122, 128, 0));
+          color: #ffffff84;
+          // border-radius: 50%;
         }
       }
 
